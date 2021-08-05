@@ -42,7 +42,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [Styled Components](https://styled-components.com/) - For styles
 ### What I learned
 
 I learn how to use css grid and flexbox and also how to make responsive website.
