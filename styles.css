@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.grid-container{
+    margin:5rem auto ;
+    width: 75%;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    align-content: center;
+    height: 120%;
+}
+
+.grid-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 3rem;
+    height: 120%;
+    font-size: 15px;
+} 
+.grid-item h3{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+.grid-item-1{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.grid-item-2{
+    background-color:  hsl(184, 100%, 22%)
+}
+.grid-item-3{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+button{
+    border: none;
+    background:white;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    padding: 12px 24px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-1{
+    color:hsl(31, 77%, 52%); ;
+}
+.button-2{
+    color: hsl(184, 100%, 22%);
+}
+.button-3{
+    color:hsl(179, 100%, 13%) ;
+}
+button:hover{
+    background-color: transparent;
+    color:white;
+}
+@media all and (max-width:375px){
+    
+    .grid-container{
+        display: grid;
+        margin-top: 4rem;
+        margin: auto;
+        height: 320vh;
+        width: 40%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (3,400px );
+    }
+    .grid-item{
+        padding: 2rem;
+        margin: 0;
+        width: 250px;
+        height: 100vh;
+    }
+    .grid-item-1{
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 7px;
+    }
+    .grid-item-3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+}
